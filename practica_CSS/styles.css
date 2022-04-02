@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffff;
+    font-family: 'calibri';
+}
+
+header{
+    background: #fff;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+img{
+    width: 200px;
+    height: 40px;
+    float: left;
+    padding: 5px;
+}
+
+nav{
+    float:right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 50px;
+    float: left;
+    padding: 12px 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:rgba(80, 78, 78, 0.863);
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+/**********Boton***********/
+.button {
+    background-color: #2360d1; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+  }
+ 
+ .button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+ 
+  .letras{
+     font-style: italic;
+  }
+
+
+/*******CSS Cuerpo***********/
+
+  .imagenesCuerpo{
+    width: 680px;
+    height: 500px;
+    float: left;
+    padding: 5px;
+}
+
+#contenedor{
+    padding: 10px;
+    height: 550px;
+    width: auto;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(5,7,12,0.05),rgba(5,7,12,0.05)), 
+    /*url("imagenes/fondo.jpg");*/;
+    background-size: cover;
+}
+
+.izquierda{
+    float: left;
+    padding: 10px;
+    color: rgb(43, 76, 223);
+    width: 650px;
+    height: 500px;
+    margin: 40px;
+
+}
+
+.derecha{
+    float: left;
+    padding: 0px;
+    color: #ffff;
+    width: 300px;
+    margin: 40px;
+}
+
+.tamañoletraTitulos{
+    font-size:50px;
+}
+ p{
+    font-size:25px;
+ }
+
+/****FexBox Logos Vacunas****/
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    align-items: center;
+    justify-content:center;
+    justify-content:space-between;
+    opacity: 0.3;
+}
+
+/*********PopUp************/
+
+
+/*********Flex Container**************/
+
+.flex-container{
+    display:flex;
+    justify-content:space-between;
+    flex-grow: 2;
+    align-items: left;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .flex-container div{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5px;
+    width: 200px;
+    height: 180px;
+    box-shadow:2px  2px 2px 2px rgb(175, 185, 185);
+}
+ 
+ .imagenes{
+    width: 50px;
+    height: 50px;
+ }
+
+
+ /******Contendor tercera parte*******/
+
+ .imagenesCuerpo2{
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    object-fit: contain;
+}
+
+#contenedor2{
+    padding: 10px;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    background-color: #ffffff;
+    background-image: linear-gradient(rgba(5,7,12,0.05),rgba(5,7,12,0.05)), 
+    /*url("imagenes/fondo.jpg");*/;
+    background-size: cover;
+}
+
+.izquierda2{
+    float: left;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    padding: 10px;
+    color: rgb(43, 76, 223);
+    width: 650px;
+    height: 500px;
+    margin: 40px;
+
+}
+
+.derecha2{
+    overflow:auto;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    padding: 0px;
+    color: #ffff;
+    width: 510px;
+    height: 500px;
+    margin: 40px;
+}
+
+.tamañoletraTitulos2{
+    font-size:50px;
+}
+
+
+/********Botones  desplegables de iformancion*********/
+
+input[id^="info"]{
+    display: none;
+}
+
+input[id^="info"]+label{
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: #ffffff;
+    box-shadow:2px  2px 2px 2px rgb(175, 185, 185);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[id^="info"]:checked + label {
+    color: #333;
+    background: #ccc;
+}
+
+input[id^="info"] ~ .info {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0;
+    }
+
+    input[id^="info"]:checked + label + .info{
+        height: auto;
+        opacity: 1;
+        box-shadow:2px  2px 2px 2px rgb(175, 185, 185);
+        border-radius: 10px;
+        margin: 15px;
+        }
+
+
+/**********Footer*************/
+
+#footerContainer{
+    width: 1080;
+    height: 230px;
+    background-color: #2360d188;
+    opacity: 0.8;
+    display: flex;
+}
+
+.izquierdaFooter{
+    width:700px;
+    height: 230px;
+    float: left;
+}
+div.izquierdaFooter {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.derechaFooter{
+    width:700px;
+    height: 230px;
+    float: left;
+}

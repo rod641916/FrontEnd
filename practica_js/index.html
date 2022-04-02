@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./pokedex.css">
+    <script src="./pokedex.js"></script>
+
+</head>
+<header >
+    <img src="logo.png" class="imagen">
+</header>
+<body>
+    <!------------------------------------Busqueda de pokemon---------------------------------------------->
+    <div class="nombrePokemon">
+        <input type="text" placeholder="Buscar pokemon" id="pokeName" name="pokeName" style="background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+        background-size: 24px;
+        width: 200px;
+        border: transparent;
+        border-bottom: solid 1px #ccc;
+        padding: 10px 10px 10px 30px;
+        outline: none;">
+
+        <button onclick="fetchPokemon()" class="botonBuscar button1">Buscar pokemon</button>
+    </div>
+    <!------------------------------------Fin Busqueda de pokemon---------------------------------------------->
+
+    <div class="contenedor">
+        <div class="imagenPokemon">
+            <img src="./pokeball.png" alt="Pokemon" id="pokeImg" width="300px">
+        </div>
+
+        <br>
+    </div>
+
+    <div class="contenedor">
+        <div id="texto">
+            <h2>Nombre</h2>
+            <div id="nombre" style="text-transform: capitalize;">ㅤ</div>
+            <h2>Tipo</h2>
+            <div id="tipo" style="text-transform: capitalize;">ㅤ</div>
+            <h2>Estadisticas</h2>
+
+            <div class="default">
+                <table>
+                    <tr>
+                        <th>HP</th>
+                        <th>ATTACK</th>
+                        <th>DEFENSE</th>
+                        <th>SPECIAL ATTACK</th>
+                        <th>SPECIAL DEFENSE</th>
+                        <th>SPEED</th>
+                    </tr>
+                    <tr>
+                        <td id="hp">ㅤ</td>
+                        <td id="attack">ㅤ</td>
+                        <td id="defense">ㅤ</td>
+                        <td id="specialAttack">ㅤ</td>
+                        <td id="specialDefense">ㅤ</td>
+                        <td id="speed">ㅤ</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h2>Movimientos</h2>
+                <div style="width: autopx; height: 300px;">
+                    <div id="movimientos" style="font-family: Arial; text-transform: capitalize; font-size: 25px;"></div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+<br>
+<hr>
+</body>
+
+<footer class="contenedor" style="text-align: center; font-style: oblique;font-size:large; font-weight: bolder;">
+
+    <p>Pokedex creada para "LaunchX"</p>
+    <p>Creadata por</p>
+    <p>"Tapia Reyes Rodrigo"</p>
+</footer>
+
+
+</html>

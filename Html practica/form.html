@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Pedido</title>
+</head>
+<header>
+    <img>
+    <div>
+        <center><a href="index.html"><img src="images/Logotipo Emprendimiento Yoga Femenino Crema.png"
+                    class=logotipo></img></a></center>
+    </div>
+    </img>
+    <hr>
+    <hr>
+</header>
+
+<body class="background">
+    <div>
+
+        <div align="center">
+            <a href="index.html">
+                    <button class="button button1">Inicio</button>
+            </a>
+        </div>
+
+        <!--Datos del cliente--->
+        <div style="background-color: rgb(136, 199, 241); height: 650px; width: 560px;margin: auto; ">
+            <h1>
+                <center>Pedido</center>
+            </h1>
+            <form action="/accion.js" id="form1" method="post" class="letras">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="nombre">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono"><br><br>
+
+                <label for="nombre">Correo Electronico:</label>
+                <input type="text" id="correo" name="correo"><br><br>
+
+                <label for="nombre">Descripcion del pastel:</label>
+                <p>
+                    <textarea id="descripcion" name="descripcion" style="width:300px; height: 80px"></textarea>
+                </p>
+
+
+                <!--Sabores de pasteles--->
+                <h2>Seleccione el sabor de su pastel</h2>
+                <label>(Puede cobinar hasta 3 sabores)</label><br><br>
+                <input type="checkbox" id="topping1" name="topping1" value="imposible">
+                <label for="topping1">Imposible</label>
+
+                <input type="checkbox" id="topping2" name="topping2" value="3leches">
+                <label for="topping2">3 leches</label>
+
+                <input type="checkbox" id="topping3" name="topping3" value="frutos_rojos">
+                <label for="topping3">Frutos rojos</label>
+
+                <input type="checkbox" id="topping3" name="topping3" value="cafe">
+                <label for="topping3">Cafe</label>
+
+                <input type="checkbox" id="topping3" name="topping3" value="manzana">
+                <label for="topping3">Manzana</label>
+
+
+                <!--Adornos--->
+                <h2>Seleccione sus adornos</h2>
+                <label>(Puede llevar mas de 1 adorno)</label><br><br>
+                <input type="checkbox" id="topping1" name="topping1" value="imposible">
+                <label for="topping1">Letrero personalizado</label>
+
+                <input type="checkbox" id="topping2" name="topping2" value="3leches">
+                <label for="topping2">Vela de cumpleaños figura</label>
+
+                <input type="checkbox" id="topping3" name="topping3" value="frutos_rojos">
+                <label for="topping3">Perlas de sabor</label>
+
+                <input type="checkbox" id="topping3" name="topping3" value="cafe">
+                <label for="topping3">Dibujo en oblea</label>
+                <br>
+                <br>
+        </div>
+
+        <a>
+            <center>
+                <button class="button button1" type="submit" value="Enviar">Enviar</button>
+                <button class="button button1" type="reset" value="Borrar">Borrar</button>
+            </center>
+        </a>
+        </form>
+    </div>
+</body>
+
+</html>
